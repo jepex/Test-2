@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<!-- Creating formgroup, lot of erros what i cant figure out but looks like they wont affect to app anyhow :P Aleksi Ukkonen 1601558 -->
+<ion-content padding>
+  <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
+ 
+<!-- Making email formController Aleksi Ukkonen 1601558 -->
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input #email formControlName="email" type="email" placeholder="Your email address"
+        [class.invalid]="!loginForm.controls.email.valid &&
+          loginForm.controls.email.dirty"></ion-input> 
+    </ion-item>
+    <!-- Making errormessage if email is not valid Aleksi Ukkonen 1601558 -->
+    <ion-item class="error-message" *ngIf="!loginForm.controls.email.valid  &&
+      loginForm.controls.email.dirty">
+      <p>Please enter a valid email.</p>
+    </ion-item>
+<!-- Making password formController Aleksi Ukkonen 1601558 -->
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input #password formControlName="password" type="password" placeholder="Your password"
+        [class.invalid]="!loginForm.controls.password.valid &&
+          loginForm.controls.password.dirty"></ion-input>
+    </ion-item>
+    <!-- Making error-message if password not valid Aleksi Ukkonen 1601558 -->
+    <ion-item class="error-message" *ngIf="!loginForm.controls.password.valid  &&
+      loginForm.controls.password.dirty">
+      <p>Your password needs more than 6 characters.</p>
+    </ion-item>
+    <!-- Making login button Aleksi Ukkonen 1601558 -->
+    <button ion-button block type="submit">
+      Login
+    </button>
+
+  </form>
+
+  <!-- Making Account creating button Aleksi Ukkonen 1601558 -->
+  <button ion-button block clear (click)="createAccount()">
+    Create a new account
+  </button>
+
+</ion-content>
