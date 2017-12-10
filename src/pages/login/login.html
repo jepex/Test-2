@@ -1,11 +1,17 @@
 <ion-header>
   <ion-navbar color="primary">
-    <ion-title>
-      Login
-    </ion-title>
+      <ion-title><font color="white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Login</font></ion-title>
+      
   </ion-navbar>
 </ion-header>
 <!-- Creating formgroup, lot of erros what i cant figure out but looks like they wont affect to app anyhow :P Aleksi Ukkonen 1601558 -->
+<style>.content {
+  max-width: 1950px;
+  margin: 0px;
+  background: #4F9BF8;
+  padding:10px;
+}</style>
+
 <ion-content padding>
   <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
  
@@ -42,7 +48,7 @@
 
   <!-- Making Account creating button Aleksi Ukkonen 1601558 -->
   <button ion-button block clear (click)="createAccount()">
-    Create a new account
+    <font color="black">Create Account</font>
   </button>
 
 </ion-content>

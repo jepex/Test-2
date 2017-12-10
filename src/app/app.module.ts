@@ -17,11 +17,11 @@ import { AuthProvider } from '../providers/auth/auth';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
 const firebaseConfig = { // setting up firebase credentials so my app can connect to firebase when authenticating Aleksi Ukkonen 1601558
-  apiKey: "AIzaSyDUzRwESrmy-9hlzQyPivFkHBGEekC7COg",
-  authDomain: "test-1-7e323.firebaseapp.com",
-  databaseURL: "https://test-1-7e323.firebaseio.com",
-  storageBucket: "test-1-7e323.appspot.com",
-  messagingSenderId: "429566855520"
+  apiKey: "AIzaSyBsobL0nRUCenfBooXxbII4s8Wm9zsdbPg",
+  authDomain: "test-2-17404.firebaseapp.com",
+  databaseURL: "https://test-2-17404.firebaseio.com",
+  storageBucket: "",
+  messagingSenderId: "205997282161"
 };
 
 @NgModule({

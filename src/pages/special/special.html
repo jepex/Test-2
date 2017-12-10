@@ -4,11 +4,21 @@
       <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    </ion-buttons>
-    <ion-title>Contacts</ion-title>
+    </ion-buttons> <!-- Setting up title with some soclour and position changes Aleksi Ukkonen 1601558 -->
+    <ion-title><font color="white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Contact</font></ion-title>
   </ion-navbar>
 </ion-header>
- 
-<ion-content padding>
-  You can contact me with email: aleksi.ukkonen@gmail.com or with a phone 0404136187
+<!--Setting up style to content of page Aleksi Ukkonen 1601558  -->
+<style>.content {   
+  max-width: 1950px;
+  margin: 0px;
+  background: #4F9BF8;
+  padding:10px;
+}</style>
+<ion-content padding>  <!-- Creating button which will automatically open a primary email Aleksi Ukkonen 1601558 -->
+  <a href="mailto:aleksi.ukkonen@gmail.com?Subject=Help%20ABC" target="_top" ion-button full clear>
+    <ion-icon name="mail"></ion-icon>
+    <br>
+    <font color="black">Email</font> 
+ </a>
 </ion-content>

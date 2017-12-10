@@ -13,6 +13,8 @@ export class TabsPage {
   tab2Root: any = 'Tab2Page';
   tab3Root: any = 'Tab3Page';
   tab4Root: any = 'Tab4Page';
+  tab5Root: any = 'TeamPage';
+  tab6Root: any = 'SoftPage';
   specialRoot: any = 'SpecialPage';
   
   myIndex: number;
